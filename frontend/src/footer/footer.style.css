@@ -1,0 +1,35 @@
+.informationalPart{
+    display: flex;
+    margin-left: 1rem;
+    align-items: start;
+    width: 24.6%;
+}
+.actionalPart{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 10px;
+}
+.settingPart{
+  width: 8%;
+  justify-content: flex-end;
+  margin-right: 0.75rem;
+  display: flex;
+  flex: 1 1 25%;
+}
+.menu {
+  width: 24vw;
+  height: 100vh;
+  transform:translate(-0.4rem, -3.8rem);
+}
+.menu-item{
+  display: flex;
+  flex-direction: row;
+  gap:0.7rem;
+}
+.menu-item span {
+  font-size:small;
+  line-height: 1.5; 
+}
