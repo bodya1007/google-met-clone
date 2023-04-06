@@ -28,7 +28,7 @@ function ContentPart() {
             alignItems: 'center',
             margin: '6px',
         },
-        eqIcon:{
+        eqIcon: {
             width: '2rem',
             height: '2rem',
             borderRadius: '50%',
@@ -40,22 +40,32 @@ function ContentPart() {
         }
     }
 
+    const changeImage = event => {
+        fetch('http://localhost:3000/api/randomimage')
+            .then(response => response.blob())
+            .then(blob => {
+                const url = URL.createObjectURL(blob);
+                event.target.src = url
+            })
+            .catch(error => console.error(error));
+    }
+
     return (
         <main className="main">
-            <div className='content'>
-                <img className='image' src={image}/>
+            <div className='content' onClick={changeImage}>
+                <img className='image' src={image} />
                 <div className="caption">Polina Chacha</div>
             </div>
-            <div className='content'>
-                <img className='image' src={image1}/>
+            <div className='content' onClick={changeImage}>
+                <img className='image' src={image1} />
                 <div className="caption">Ivanka Soloviy</div>
             </div>
-            <div className='content'>
-                <img className='image' src={image2}/>
+            <div className='content' onClick={changeImage}>
+                <img className='image' src={image2} />
                 <div className="caption">Diana Bohonis</div>
             </div>
-            <div className='content'>
-                <img className='image' src={image3}/>
+            <div className='content' onClick={changeImage}>
+                <img className='image' src={image3} />
                 <div className="caption">Oksana Telishevska</div>
                 <div className="icon" >
                     <Badge
@@ -65,12 +75,12 @@ function ContentPart() {
                     </Badge>
                 </div>
             </div>
-            <div className='content'>
-                <img className='image' src={image4}/>
+            <div className='content' onClick={changeImage}>
+                <img className='image' src={image4} />
                 <div className="caption">Olena Ivashko</div>
             </div>
-            <div className='content'>
-                <img className='image' src={image5}/>
+            <div className='content' onClick={changeImage}>
+                <img className='image' src={image5} />
                 <div className="caption">You</div>
                 <div className="icon" >
                     <Badge
@@ -80,30 +90,30 @@ function ContentPart() {
                     </Badge>
                 </div>
             </div>
-            <div className='content'>
-                <img className='image' src={image6}/>
+            <div className='content' onClick={changeImage}>
+                <img className='image' src={image6} />
                 <div className="caption">Jag Rogse</div>
 
             </div>
-            <div className='content'>
-                <img className='image' src={image7}/>
+            <div className='content' onClick={changeImage}>
+                <img className='image' src={image7} />
                 <div className="caption">Hago Novak</div>
             </div>
-            <div className='content'>
-                <img className='image' src={image8}/>
+            <div className='content' onClick={changeImage}>
+                <img className='image' src={image8} />
                 <div className="caption">Jason Coleman</div>
 
             </div>
-            <div className='content'>
-                <img className='image' src={image9}/>
+            <div className='content' onClick={changeImage}>
+                <img className='image' src={image9} />
                 <div className="caption">Marco Reus</div>
             </div>
-            <div className='content'>
-                <img className='image' src={image10}/>
+            <div className='content' onClick={changeImage}>
+                <img className='image' src={image10} />
                 <div className="caption">Garet Bale</div>
             </div>
-            <div className='content'>
-                <img className='image' src={image11}/>
+            <div className='content' onClick={changeImage}>
+                <img className='image' src={image11} />
                 <div className="caption">Christina  Beul</div>
             </div>
         </main>

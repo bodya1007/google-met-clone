@@ -6,4 +6,5 @@ router
     .get('/api/randomimage',
         imageController.getRandomImage
     )
+
 module.exports = router

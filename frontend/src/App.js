@@ -7,11 +7,11 @@ import ContentPart from './content/ContentPart';
 function App() {
   return (
     <div className="App">
-      <ContentPart/>
+      <ContentPart />
       <footer className='App-footer'>
-        <InformationalPart/>
-        <ActionPart/>
-        <SettingPart/>
+        <InformationalPart />
+        <ActionPart />
+        <SettingPart />
       </footer>
     </div>
   );

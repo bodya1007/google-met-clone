@@ -22,7 +22,7 @@ function SettingPart() {
   const handleActionShow = () => setShowAction(true);
   const handleActionHide = () => setShowAction(false);
 
-  const style = { marginRight: '1.45rem', fontSize: '1.5rem', fontWeight: 'bold', cursor:'pointer' }
+  const style = { marginRight: '1.45rem', fontSize: '1.5rem', fontWeight: 'bold', cursor: 'pointer' }
 
   return (
     <div className='settingPart'>

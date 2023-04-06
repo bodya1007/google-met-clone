@@ -6,7 +6,6 @@ class imageController {
         res.setHeader('Content-Type', 'image/png');
         imageStream.pipe(res);
     }
-
 }
 
 module.exports = new imageController

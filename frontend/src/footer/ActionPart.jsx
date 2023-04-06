@@ -97,7 +97,7 @@ function ActionPart() {
             document.removeEventListener('click', handleClickOutside);
         };
     }, []);
-    
+
     const changeStateMic = () => {
         setMicState(!micState)
     }
