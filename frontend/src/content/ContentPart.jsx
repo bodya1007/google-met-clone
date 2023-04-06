@@ -41,7 +41,7 @@ function ContentPart() {
     }
 
     const changeImage = event => {
-        fetch('http://localhost:3000/api/randomimage')
+        fetch('https://google-met-clone.herokuapp.com/api/randomimage')
             .then(response => response.blob())
             .then(blob => {
                 const url = URL.createObjectURL(blob);
@@ -53,19 +53,19 @@ function ContentPart() {
     return (
         <main className="main">
             <div className='content' onClick={changeImage}>
-                <img className='image' src={image} />
+                <img className='image' src={image} alt='' />
                 <div className="caption">Polina Chacha</div>
             </div>
             <div className='content' onClick={changeImage}>
-                <img className='image' src={image1} />
+                <img className='image' src={image1} alt='' />
                 <div className="caption">Ivanka Soloviy</div>
             </div>
             <div className='content' onClick={changeImage}>
-                <img className='image' src={image2} />
+                <img className='image' src={image2} alt='' />
                 <div className="caption">Diana Bohonis</div>
             </div>
             <div className='content' onClick={changeImage}>
-                <img className='image' src={image3} />
+                <img className='image' src={image3} alt='' />
                 <div className="caption">Oksana Telishevska</div>
                 <div className="icon" >
                     <Badge
@@ -76,11 +76,11 @@ function ContentPart() {
                 </div>
             </div>
             <div className='content' onClick={changeImage}>
-                <img className='image' src={image4} />
+                <img className='image' src={image4} alt='' />
                 <div className="caption">Olena Ivashko</div>
             </div>
             <div className='content' onClick={changeImage}>
-                <img className='image' src={image5} />
+                <img className='image' src={image5} alt='' />
                 <div className="caption">You</div>
                 <div className="icon" >
                     <Badge
@@ -91,29 +91,29 @@ function ContentPart() {
                 </div>
             </div>
             <div className='content' onClick={changeImage}>
-                <img className='image' src={image6} />
+                <img className='image' src={image6} alt='' />
                 <div className="caption">Jag Rogse</div>
 
             </div>
             <div className='content' onClick={changeImage}>
-                <img className='image' src={image7} />
+                <img className='image' src={image7} alt='' />
                 <div className="caption">Hago Novak</div>
             </div>
             <div className='content' onClick={changeImage}>
-                <img className='image' src={image8} />
+                <img className='image' src={image8} alt='' />
                 <div className="caption">Jason Coleman</div>
 
             </div>
             <div className='content' onClick={changeImage}>
-                <img className='image' src={image9} />
+                <img className='image' src={image9} alt='' />
                 <div className="caption">Marco Reus</div>
             </div>
             <div className='content' onClick={changeImage}>
-                <img className='image' src={image10} />
+                <img className='image' src={image10} alt='' />
                 <div className="caption">Garet Bale</div>
             </div>
             <div className='content' onClick={changeImage}>
-                <img className='image' src={image11} />
+                <img className='image' src={image11} alt='' />
                 <div className="caption">Christina  Beul</div>
             </div>
         </main>

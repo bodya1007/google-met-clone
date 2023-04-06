@@ -225,7 +225,7 @@ function ActionPart() {
                 </Badge>
             </Tooltip>
             <Tooltip
-                title="Розпочати презентацію зараз"
+                title="Інші опції"
                 placement="top"
                 open={optionTooltip}
             >
@@ -240,6 +240,7 @@ function ActionPart() {
                     <Menu
                         anchorEl={anchorEl}
                         open={Boolean(anchorEl)}
+                        sx={{ width: '50%' }}
                         className='menu'
                     >
                         <MenuItem className='menu-item' onClick={showText}><BorderColorOutlinedIcon sx={{ opacity: '70%' }} /> <span>Дошка для конференцій</span> </MenuItem>
@@ -273,7 +274,6 @@ function ActionPart() {
                     <CallEndIcon />
                 </Badge>
             </Tooltip>
-
         </div>
     )
 }
